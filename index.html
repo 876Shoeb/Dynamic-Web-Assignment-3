@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analog Clock</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Map Routes</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    
 </head>
-<body>
+<body style ="border:0px solid; margin: 10px;">
+    <div id="map"></div>
+    <div id="formBlock">
+    <form id="form">
+        <input type="text" name="start" class="input" id="start" placeholder="choose starting point" />
+        <input type="text" name="end" class="input" id="destination" placeholder="choose destination" />
+        <button type="submit">Get Directions</button>
 
-    <canvas id="clockCanvas" width="800" height="800"></canvas>
+    </form>
+</div>
 
-    <!-- Dropdown to select timezone -->
-    <label for="timezoneSelect">Select Time Zone:</label>
-    <select id="timezoneSelect">
-        <option value="-8">UTC -8 (Pacific Time)</option>
-        <option value="-7">UTC -7 (Mountain Time)</option>
-        <option value="-6">UTC -6 (Central Time)</option>
-        <option value="-5">UTC -5 (Eastern Time)</option>
-        <option value="-5.5">UTC -5:30 (India Standard Time)</option> <!-- Added an example for more specificity -->
-        <option value="-5">Bogotá (UTC -5)</option>
-        <!-- Add more time zones as necessary -->
-    </select>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.7/leaflet.js"></script>
+    <script src="https://mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=KEY&center=Boston,MA&size=@2x"></script>
+    <script src="https://mapquestapi.com/sdk/leaflet/v2.2/mq-routing.map.js?key=KEY&center=Boston,MA&size=@2x"></script>
     <script src="app.js"></script>
- 
 </body>
-</html>
+</html> 
