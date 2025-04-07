@@ -10,7 +10,17 @@
 
     <canvas id="clockCanvas" width="800" height="800"></canvas>
 
-
+    <!-- Dropdown to select timezone -->
+    <label for="timezoneSelect">Select Time Zone:</label>
+    <select id="timezoneSelect">
+        <option value="-8">UTC -8 (Pacific Time)</option>
+        <option value="-7">UTC -7 (Mountain Time)</option>
+        <option value="-6">UTC -6 (Central Time)</option>
+        <option value="-5">UTC -5 (Eastern Time)</option>
+        <option value="-5.5">UTC -5:30 (India Standard Time)</option> <!-- Added an example for more specificity -->
+        <option value="-5">Bogotá (UTC -5)</option>
+        <!-- Add more time zones as necessary -->
+    </select>
 
     <script src="app.js"></script>
  
